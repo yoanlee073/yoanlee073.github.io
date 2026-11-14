@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" data-title-en="You-An Lee" data-desc-zh="應用物理學家與產品開發工程師：紊流混合與相變。" data-title-zh="李祐安">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>You-An Lee</title>
+<meta name="description" content="Applied physicist and product development engineer: turbulent mixing and phase change.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header class="nav">
+  <!-- Site switch to the TAD Lab page — hidden for now. Uncomment to enable.
+  <nav class="site-switch" aria-label="Site">
+    <a href="index.html" class="site-switch__btn" aria-current="page">Yoan</a>
+    <a href="lab.html" class="site-switch__btn">TAD Lab</a>
+  </nav>
+  -->
+  <span></span>
+  <div class="nav__right">
+    <nav class="nav__links">
+      <a href="#about" class="i18n-en">About</a>
+      <a href="#about" class="i18n-zh">關於我</a>
+      <a href="#experience" class="i18n-en">Experience</a>
+      <a href="#experience" class="i18n-zh">經歷</a>
+      <a href="#research" class="i18n-en">Research</a>
+      <a href="#research" class="i18n-zh">研究</a>
+      <a href="#publications" class="i18n-en">Publications</a>
+      <a href="#publications" class="i18n-zh">著作</a>
+      <!-- <a href="#teaching" class="i18n-en">Teaching</a>
+      <a href="#teaching" class="i18n-zh">教學理念</a> -->
+      <a href="#contact" class="i18n-en">Contact</a>
+      <a href="#contact" class="i18n-zh">聯絡方式</a>
+    </nav>
+    <div class="lang-switch" role="group" aria-label="Language / 語言">
+      <button type="button" class="lang-switch__btn" data-lang="en">EN</button>
+      <button type="button" class="lang-switch__btn" data-lang="zh">繁中</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <canvas id="flow-canvas" aria-hidden="true"></canvas>
+    <div class="hero__content">
+
+      <h1 class="hero__name i18n-en">You-An Lee (Yoan)</h1>
+      <h1 class="hero__name i18n-zh" lang="zh-Hant">李祐安（Yoan）</h1>
+
+      <p class="hero__role i18n-en">Applied Physicist X Product Development Engineer</p>
+      <p class="hero__role i18n-zh">Applied Physicist X Product Development Engineer</p>
+
+      </p>
+
+      <div class="hero__links">
+        <a href="#contact" class="btn btn--primary i18n-en">Get in touch</a>
+        <a href="#contact" class="btn btn--primary i18n-zh" lang="zh-Hant">聯絡我</a>
+        <a href="YouAn_Lee_CV.pdf" class="btn btn--ghost i18n-en">Download CV</a>
+        <a href="YouAn_Lee_CV.pdf" class="btn btn--ghost i18n-zh" lang="zh-Hant">下載履歷</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <p class="section__label i18n-en">01 — About</p>
+    <p class="section__label i18n-zh" lang="zh-Hant">01 — 關於我</p>
+
+    <div class="about__grid">
+      <img class="about__photo" src="yoan-portrait.jpg" alt="Portrait of You-An Lee (Yoan)">
+      <div class="section__body">
+        <p class="lead-text i18n-en">
+          I deliver a track record of duality: a physicist unveiling physical mechanisms and scaling laws, and an engineer
+          designing and integrating products hands-on.
+        </p>
+
+        <p class="lead-text i18n-en">
+          At ASML, I build physics-informed controllers and multiphysics analysis tools for EUV projection optics,
+          spanning optics, thermal control, and optimization.
+          I hold a PhD in fluid dynamics from the University of Twente, where I measured complex flows with optics and algorithms.
+          Before that, I designed and developed wearables as a product development engineer at Garmin.
+          I trained as a mechanical engineer at National Taiwan University.
+        </p>
+
+        <p class="lead-text i18n-zh" lang="zh-Hant">
+          我的職涯在兩種身份間流轉 - 科學家的一面著迷於的現象背後的物理機制，而同時也是親手設計、整合產品的工程師。
+        </p>
+
+        <p class="lead-text i18n-zh" lang="zh-Hant">
+          在艾斯摩爾（ASML），我為 EUV 投影光學開發物理控制演算法與多物理耦合分析工具，涵蓋光學、熱控制與最佳化。
+          我在荷蘭特文特大學取得流體力學博士學位，以光學量測與演算法解析複雜流動。
+          在此之前，我在Garmin擔任智慧穿戴機構工程師。
+          畢業於台大機械系/所。
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section section--cover">
+    <div class="section-bg" aria-hidden="true">
+      <img src="jet-graphic.png" alt="" class="section-bg__img" id="jet-bg">
+    </div>
+    <p class="section__label i18n-en">02 — Experience</p>
+    <p class="section__label i18n-zh" lang="zh-Hant">02 — 經歷</p>
+
+    <h2 class="section__title i18n-en">Industry and academia, in rotation</h2>
+    <h2 class="section__title i18n-zh" lang="zh-Hant">在產業與學界之間輪轉</h2>
+
+    <p class="section__intro i18n-en">
+      My path zigzags between the bench and the factory floor on purpose. Mechanical engineering
+      training at NTU (Taiwan) and product development work at Garmin built a bias toward things
+      that have to actually ship. A PhD in the Physics of Fluids group at the University of Twente
+      pulled the other way — toward understanding thouroughly a mechanism behind observation, and trying to derive scaling law for the underlying physics 
+      . I'm currently back on the industry side at ASML, surfing on the front of AI booming, changing the world, one nanometer at a time. Full record on
+      <a href="https://nl.linkedin.com/in/youanlee" target="_blank" rel="noopener">LinkedIn</a>
+      and <a href="https://scholar.google.com/citations?user=l011KF0AAAAJ&amp;hl=nl" target="_blank" rel="noopener">Google Scholar</a>.
+    </p>
+    <p class="section__intro i18n-zh" lang="zh-Hant">
+      我的職涯在實驗室跟業界之間來回穿梭。台大機械系的訓練,加上
+      在 Garmin 做產品開發的那幾年,養成了我對產品的可製造性和開發時程的重視。
+      後來去Twente大學流體物理研究室念博士,又把我拉往另一個方向 —— 探究觀察到的物理現象背後的機制,
+      並找出物理量之間的數學關係。現在我又回到產業界,在 ASML,站在 AI 浪潮最前線,
+      以奈米為單位改變世界。完整經歷可以看我的
+      <a href="https://nl.linkedin.com/in/youanlee" target="_blank" rel="noopener">LinkedIn</a>
+      與 <a href="https://scholar.google.com/citations?user=l011KF0AAAAJ&amp;hl=nl" target="_blank" rel="noopener">Google Scholar</a>。
+    </p>
+
+    <div class="exp-groups exp-groups--single i18n-en">
+
+      <div class="exp-group exp-group--industry">
+        <p class="exp-group__label">Industry</p>
+
+        <div class="exp-item">
+          <h3 class="exp-item__title">ASML — Design Engineer</h3>
+          <p class="exp-item__meta">Mirror heating control, low-NA EUV projection optics</p>
+          <p class="exp-item__body">
+            Design engineer for mirror heating control on ASML's EUV projection optics —
+            the <a href="https://www.asml.com/en/technology/lithography-principles/lenses-and-mirrors" target="_blank" rel="noopener">multilayer mirror systems</a>
+            that focus EUV light onto the wafer. Repeated exposure pulses heat the optics by
+            millikelvins, enough to distort the image by nanometers. Day-to-day work is data
+            analysis and model-calibration algorithms that keep that thermal drift under control, plus evaluating new control and optimization strategies.
+          </p>
+        </div>
+
+        <div class="exp-item">
+          <h3 class="exp-item__title">Garmin — Mechanical Engineer</h3>
+          <p class="exp-item__meta">Design for manufacturing, product development</p>
+          <p class="exp-item__body">
+            Mechanical engineer focused on design-for-manufacturing and product development —
+            turning design intent into smart wearables on your wrist built at volume. Details on
+            <a href="https://nl.linkedin.com/in/youanlee" target="_blank" rel="noopener">LinkedIn</a>.
+          </p>
+        </div>
+      </div>
+
+    </div>
+    <p class="section__intro i18n-zh" lang="zh-Hant">
+      中文經歷建置中，請先切換至英文版閱讀。<span class="tag">Under construction</span>
+    </p>
+  </section>
+
+  <!-- RESEARCH -->
+  <section id="research" class="section">
+    <p class="section__label i18n-en">03 — Research</p>
+    <p class="section__label i18n-zh" lang="zh-Hant">03 — 研究</p>
+
+    <h2 class="section__title i18n-en">Mixing and phase change</h2>
+    <h2 class="section__title i18n-zh" lang="zh-Hant">混合與相變</h2>
+
+    <p class="section__intro i18n-en">
+      Two lines of experimental work: one from my PhD, one from my master's. Each has one featured paper below.
+      The full list is under <a href="#publications">Publications</a>.
+    </p>
+    <p class="section__intro i18n-zh" lang="zh-Hant">
+      過去的研究專注在流體相變化，碩士期間專注於表面改質造成的熱傳增強，博士期間探討紊流中的流體混合和相變化，各附一篇代表論文。完整清單請見<a href="#publications">著作發表</a>。
+    </p>
+
+    <div class="themes">
+
+      <!-- Theme 01: turbulent mixing and phase transition -->
+      <article class="theme">
+        <figure class="theme__figure">
+          <img class="theme__img" src="jet-graphic.png" alt="Visualisation of a turbulent jet mixing into its surroundings" loading="lazy">
+          <figcaption class="theme__caption i18n-en">Turbulent jet visualisation, from my PhD thesis cover.</figcaption>
+          <figcaption class="theme__caption i18n-zh" lang="zh-Hant">紊流噴流視覺化，取自博士論文封面。</figcaption>
+        </figure>
+
+        <div class="theme__text">
+          <span class="theme__num">01</span>
+          <h3 class="theme__title i18n-en">Turbulent mixing and phase transition</h3>
+          <h3 class="theme__title i18n-zh" lang="zh-Hant">紊流混合與相變</h3>
+
+          <p class="theme__meta i18n-en">PhD · University of Twente, <a href="https://pof.tnw.utwente.nl/" target="_blank" rel="noopener">Physics of Fluids</a> · 2019–2023 · with Detlef Lohse &amp; Sander Huisman</p>
+          <p class="theme__meta i18n-zh" lang="zh-Hant">博士 · 特文特大學<a href="https://pof.tnw.utwente.nl/" target="_blank" rel="noopener">流體物理研究群</a> · 2019–2023 · 指導教授 Detlef Lohse 與 Sander Huisman</p>
+
+          <p class="theme__body i18n-en">
+            How turbulence drives a liquid mixture past the point where droplets nucleate.
+            I studied turbulent jets mixing a ternary solvent system, and tracked concentration fields
+            near the turbulent/non-turbulent interface in confined and unsteady jets.
+            Thesis: <a href="https://research.utwente.nl/en/publications/mixing-and-solvent-exchange-in-turbulent-jet-flows/" target="_blank" rel="noopener">Mixing and Solvent Exchange in Turbulent Jet Flows</a>.
+            Video: <a href="https://www.youtube.com/watch?v=9_rO1jNC6wo&amp;t=42s" target="_blank" rel="noopener">APS DFD Gallery of Fluid Motion</a>.
+          </p>
+          <p class="theme__body i18n-zh" lang="zh-Hant">
+            研究紊流如何把液體混合物推過成核點、生成微液滴。我研究紊流噴流中三元溶劑系統的混合，並追蹤受限與非穩態噴流中，紊流/非紊流界面附近的濃度場。博士論文：<a href="https://research.utwente.nl/en/publications/mixing-and-solvent-exchange-in-turbulent-jet-flows/" target="_blank" rel="noopener">Mixing and Solvent Exchange in Turbulent Jet Flows</a>。影片：<a href="https://www.youtube.com/watch?v=9_rO1jNC6wo&amp;t=42s" target="_blank" rel="noopener">APS DFD Gallery of Fluid Motion</a>。
+          </p>
+
+          <div class="feature">
+            <p class="feature__label i18n-en">Featured paper</p>
+            <p class="feature__label i18n-zh" lang="zh-Hant">代表論文</p>
+            <p class="feature__cite">
+              Lee, Y.-A., Sun, C., Huisman, S. G., &amp; Lohse, D. (2022).
+              Micro-droplet nucleation through solvent exchange in a turbulent buoyant jet.
+              <em>Journal of Fluid Mechanics</em>, 943, A11.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Theme 02: phase change on engineered surfaces -->
+      <article class="theme">
+        <figure class="theme__figure">
+          <a href="condensation.jpg" target="_blank" rel="noopener">
+            <img class="theme__img theme__img--wide" src="condensation.jpg" alt="Condensation on plain, superhydrophobic and interlaced-wettability surfaces, in horizontal and vertical orientation" loading="lazy">
+          </a>
+          <figcaption class="theme__caption i18n-en">Condensation on plain, superhydrophobic and interlaced-wettability surfaces, horizontal and vertical. Click to enlarge.</figcaption>
+          <figcaption class="theme__caption i18n-zh" lang="zh-Hant">平滑、超疏水與交錯潤濕性表面上的凝結，水平與垂直擺放。點擊放大。</figcaption>
+        </figure>
+
+        <div class="theme__text">
+          <span class="theme__num">02</span>
+          <h3 class="theme__title i18n-en">Phase change on engineered surfaces</h3>
+          <h3 class="theme__title i18n-zh" lang="zh-Hant">工程表面上的相變</h3>
+
+          <p class="theme__meta i18n-en">Master's · National Taiwan University · 2014–2016 · collaborations 2020–2021</p>
+          <p class="theme__meta i18n-zh" lang="zh-Hant">碩士 · 國立台灣大學 · 2014–2016 · 後續合作 2020–2021</p>
+
+          <p class="theme__body i18n-en">
+            How surface design changes condensation and boiling heat transfer.
+            I built surfaces with interlaced wettability, modified with nanoparticles, and measured how
+            they perform in condensation, including the effect of surface orientation.
+            Later collaborations extended this to boiling on graphene coatings and to self-propelled
+            droplets on superheated surfaces.
+          </p>
+          <p class="theme__body i18n-zh" lang="zh-Hant">
+            研究表面設計如何改變凝結與沸騰熱傳。我製作以奈米顆粒改質的交錯潤濕性表面，量測其凝結熱傳表現，以及表面方向的影響。後續合作延伸到石墨烯塗層表面的沸騰熱傳，以及過熱表面上的自驅動液滴。
+          </p>
+
+          <div class="feature">
+            <p class="feature__label i18n-en">Featured paper</p>
+            <p class="feature__label i18n-zh" lang="zh-Hant">代表論文</p>
+            <p class="feature__cite">
+              Lee, Y.-A., Kuo, L.-S., et al. (2016).
+              Orientation effects of nanoparticle-modified surfaces with interlaced wettability on condensation heat transfer.
+              <em>Applied Thermal Engineering</em>, 98, 1054–1060.
+            </p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section id="publications" class="section">
+    <p class="section__label i18n-en">04 — Publications</p>
+    <p class="section__label i18n-zh" lang="zh-Hant">04 — 著作</p>
+
+    <h2 class="section__title i18n-en">Publications</h2>
+    <h2 class="section__title i18n-zh" lang="zh-Hant">著作發表</h2>
+
+    <p class="section__intro i18n-en">
+      Total citations: 71 · h-index: 4 · i10-index: 2. Full, live-updating list on
+      <a href="https://scholar.google.com/citations?user=l011KF0AAAAJ&amp;hl=nl" target="_blank" rel="noopener">Google Scholar</a>.
+    </p>
+    <p class="section__intro i18n-zh" lang="zh-Hant">
+      總引用次數:71 · h-index:4 · i10-index:2。完整、即時更新的清單請見
+      <a href="https://scholar.google.com/citations?user=l011KF0AAAAJ&amp;hl=nl" target="_blank" rel="noopener">Google Scholar</a>。
+    </p>
+
+    <div class="pub-group i18n-en">
+      <p class="pub-group__title">Doctoral Research (University of Twente, 2019–2023) — Multiphase Turbulence, Solvent Exchange &amp; Scalar Transport</p>
+      <p class="pub-item">Lee, Y.-A., Sun, C., Huisman, S. G., &amp; Lohse, D. (2022). Micro-droplet nucleation through solvent exchange in a turbulent buoyant jet. <em>Journal of Fluid Mechanics</em>, 943, A11.</p>
+      <p class="pub-item">Lee, Y.-A., Huisman, S. G., &amp; Lohse, D. (2023). Mixing and solvent exchange near the turbulent/non-turbulent interface in a quasi-2D jet. <em>International Journal of Multiphase Flow</em>, 169, 104608.</p>
+      <p class="pub-item">Lee, Y.-A., Lohse, D., &amp; Huisman, S. (2023). Scalar transport and nucleation in quasi-two-dimensional starting jets and puffs. <em>International Journal of Multiphase Flow</em>.</p>
+
+      <p class="pub-group__title">Master's Research (2014–2016) &amp; Related Collaboration (2020–2021) — Surface Engineering, Condensation/Boiling Heat Transfer</p>
+      <p class="pub-item">Lee, Y.-A., Kuo, L.-S., et al. (2015). Condensation heat transfer enhancement on surfaces with interlaced wettability. <em>Journal of Advanced Thermal Science Research</em>, 2, 27–32.</p>
+      <p class="pub-item">Lee, Y.-A., Kuo, L.-S., et al. (2016). Orientation effects of nanoparticle-modified surfaces with interlaced wettability on condensation heat transfer. <em>Applied Thermal Engineering</em>, 98, 1054–1060.</p>
+      <p class="pub-item">Hsu, C.-C., Lee, Y.-A., et al. (2021). Self-propelled sessile droplets on a superheated and heterogeneous wetting surface. <em>Colloids and Surfaces A</em>.</p>
+      <p class="pub-item">Wu, C.-H., Lee, Y.-A., et al. (2020). Heat transfer enhancement of a multilayer graphene coating surface. <em>Experimental Thermal and Fluid Science</em>, 118, 110175.</p>
+
+      <p class="pub-group__title">Multimedia Publication</p>
+      <p class="pub-item">Lee, Y.-A., Huisman, S. G., &amp; Lohse, D. (2022). Mixing and Solvent Exchange in a Quasi-2D Jet. <em>Gallery of Fluid Motion</em>, APS Division of Fluid Dynamics. DOI: 10.1103/APS.DFD.2022.GFM.V0017. Featured in FYFD, a fluid-dynamics outreach blog.</p>
+    </div>
+
+    <div class="pub-group i18n-zh" lang="zh-Hant">
+      <p class="pub-group__title">博士研究(特文特大學,2019–2023)——多相紊流、溶劑交換與純量傳輸</p>
+      <p class="pub-item">Lee, Y.-A., Sun, C., Huisman, S. G., &amp; Lohse, D. (2022). Micro-droplet nucleation through solvent exchange in a turbulent buoyant jet. <em>Journal of Fluid Mechanics</em>, 943, A11.</p>
+      <p class="pub-item">Lee, Y.-A., Huisman, S. G., &amp; Lohse, D. (2023). Mixing and solvent exchange near the turbulent/non-turbulent interface in a quasi-2D jet. <em>International Journal of Multiphase Flow</em>, 169, 104608.</p>
+      <p class="pub-item">Lee, Y.-A., Lohse, D., &amp; Huisman, S. (2023). Scalar transport and nucleation in quasi-two-dimensional starting jets and puffs. <em>International Journal of Multiphase Flow</em>.</p>
+
+      <p class="pub-group__title">碩士研究(2014–2016)與後續合作(2020–2021)——表面工程、凝結/沸騰熱傳</p>
+      <p class="pub-item">Lee, Y.-A., Kuo, L.-S., et al. (2015). Condensation heat transfer enhancement on surfaces with interlaced wettability. <em>Journal of Advanced Thermal Science Research</em>, 2, 27–32.</p>
+      <p class="pub-item">Lee, Y.-A., Kuo, L.-S., et al. (2016). Orientation effects of nanoparticle-modified surfaces with interlaced wettability on condensation heat transfer. <em>Applied Thermal Engineering</em>, 98, 1054–1060.</p>
+      <p class="pub-item">Hsu, C.-C., Lee, Y.-A., et al. (2021). Self-propelled sessile droplets on a superheated and heterogeneous wetting surface. <em>Colloids and Surfaces A</em>.</p>
+      <p class="pub-item">Wu, C.-H., Lee, Y.-A., et al. (2020). Heat transfer enhancement of a multilayer graphene coating surface. <em>Experimental Thermal and Fluid Science</em>, 118, 110175.</p>
+
+      <p class="pub-group__title">多媒體發表</p>
+      <p class="pub-item">Lee, Y.-A., Huisman, S. G., &amp; Lohse, D. (2022). Mixing and Solvent Exchange in a Quasi-2D Jet. <em>Gallery of Fluid Motion</em>, APS Division of Fluid Dynamics. DOI: 10.1103/APS.DFD.2022.GFM.V0017. 曾獲流體力學科普部落格 FYFD 專文報導。</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section--contact">
+    <p class="section__label i18n-en">05 — Contact</p>
+    <p class="section__label i18n-zh" lang="zh-Hant">05 — 聯絡方式</p>
+
+    <h2 class="section__title i18n-en">Let's talk</h2>
+    <h2 class="section__title i18n-zh" lang="zh-Hant">歡迎聯絡交流</h2>
+
+    <div class="contact__grid">
+      <a href="mailto:yoan.lee02@gmail.com" class="contact__item">yoan.lee02@gmail.com</a>
+      <a href="https://scholar.google.com/citations?user=l011KF0AAAAJ&hl=nl" class="contact__item">Google Scholar</a>
+      <a href="https://nl.linkedin.com/in/youanlee" class="contact__item">LinkedIn</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p class="i18n-en">&copy; <span id="year"></span> You-An Lee (Yoan). Built with stretching-and-mixing between two worlds.</p>
+  <p class="i18n-zh" lang="zh-Hant">&copy; <span id="year-zh"></span> 李祐安(Yoan)。在兩個世界之間拉伸、混合而成。</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

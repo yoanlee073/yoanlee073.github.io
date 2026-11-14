@@ -1,0 +1,15 @@
+# macOS / local tooling
+.DS_Store
+.claude/
+
+# Private drafts and notes — never publish
+TAD Lab Research Proposal (Draft v0).md
+README.md
+
+# Lab page — not public yet (remove this line when you want to publish it)
+lab.html
+
+# Source / unused files not needed by the site
+Cover.tif
+cv.pdf
+phd-thesis-cover.jpg
